@@ -90,7 +90,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "025e0570-c2fb-4939-afdc-858b65d7e03e")
-		(at 160.78 100.72)
+		(at 132.3 79.25)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C8"
@@ -153,12 +153,6 @@
 		(path "/4a07b006-283e-4571-9b71-e84fbde8671b")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -248,13 +242,13 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "08b908b0-43e5-4ccb-ac7d-03e5548aa174")
-		(at 151.8375 92.5)
+		(at 123 87.5875 -90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R7"
-			(at 0 -1.65 0)
+			(at 0 -1.65 90)
 			(layer "F.SilkS")
-			(uuid "ef0ad668-16c8-4661-a0ad-a5b17efdcd68")
+			(uuid "e3860831-7f85-414a-aa9f-af0c5253224f")
 			(effects
 				(font
 					(size 1 1)
@@ -263,9 +257,9 @@
 			)
 		)
 		(property "Value" "330"
-			(at 0 1.65 0)
+			(at 0 1.65 90)
 			(layer "F.Fab")
-			(uuid "1d9618ad-6512-4a26-a8b8-0e06b98f4f31")
+			(uuid "8a9cb60a-3a0d-4cf2-bba1-f6c197c4edc0")
 			(effects
 				(font
 					(size 1 1)
@@ -274,10 +268,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c3d3399a-21aa-49c1-b5a5-b0a4dc06041d")
+			(uuid "d6bac929-6bc9-4e8a-a0aa-689212162b62")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -285,10 +279,10 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "787c25f7-c436-44b4-bb76-e93a13955ebd")
+			(uuid "6e0fefff-4d50-4a30-8bab-1539006fee60")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -296,7 +290,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9b687195-6aa3-44b8-af66-f7cbe9832ad0")
@@ -311,24 +305,8 @@
 		(path "/08d5e483-5190-4b54-91bd-c17fabde9bbe")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.227064 -0.735)
-			(end 0.227064 -0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "90416649-8eef-4a99-b215-941b0de3a119")
-		)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -338,6 +316,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "05a2a70b-4569-4ddf-b3f3-baa32d040f9e")
+		)
+		(fp_line
+			(start -0.227064 -0.735)
+			(end 0.227064 -0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "90416649-8eef-4a99-b215-941b0de3a119")
 		)
 		(fp_rect
 			(start -1.68 -0.95)
@@ -362,7 +350,7 @@
 			(uuid "23711522-7c70-4d10-b6b0-b50462c4f886")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "231c4478-7a45-4d5a-854b-6ec6a1a9bdd2")
 			(effects
@@ -373,7 +361,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9125 0)
+			(at -0.9125 0 270)
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
@@ -382,7 +370,7 @@
 			(uuid "129f4396-d413-40dc-9bdb-2e4650df1544")
 		)
 		(pad "2" smd roundrect
-			(at 0.9125 0)
+			(at 0.9125 0 270)
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
@@ -406,13 +394,13 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "0df295c1-4993-4291-87b6-0921fdab7845")
-		(at 146.0875 92)
+		(at 113.1625 86.5 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R5"
 			(at 0 -1.65 0)
 			(layer "F.SilkS")
-			(uuid "6a3bbbbe-f645-41cc-8b54-c36ef7cb3752")
+			(uuid "6767eba9-ee2b-409c-817b-0fc78b8fa220")
 			(effects
 				(font
 					(size 1 1)
@@ -423,7 +411,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
-			(uuid "bef13a14-c367-484e-8a90-16061e36cbde")
+			(uuid "77293d27-a33f-4b05-9027-f712fcbb694b")
 			(effects
 				(font
 					(size 1 1)
@@ -435,7 +423,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6148c8fb-31e1-4386-ba0b-051ad44440c0")
+			(uuid "e7e5d6cb-564d-4f63-b9ff-99287948e45e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -446,7 +434,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "076cdae7-bd36-44a8-8307-aee73349ddcf")
+			(uuid "0f8fb42f-6d80-41be-b10d-ae14630717e2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -469,24 +457,8 @@
 		(path "/57785c42-2854-46de-8fb3-a4ef7fdedbe1")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.227064 -0.735)
-			(end 0.227064 -0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "8e02a073-f5ff-45b6-b4e5-f4b6d76e86c2")
-		)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -496,6 +468,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "b756e8de-24ae-4396-b727-99c1c2b91286")
+		)
+		(fp_line
+			(start -0.227064 -0.735)
+			(end 0.227064 -0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8e02a073-f5ff-45b6-b4e5-f4b6d76e86c2")
 		)
 		(fp_rect
 			(start -1.68 -0.95)
@@ -531,7 +513,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9125 0)
+			(at -0.9125 0 180)
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
@@ -540,7 +522,7 @@
 			(uuid "e120ea90-6ab4-4896-bf37-f4eb57db62c1")
 		)
 		(pad "2" smd roundrect
-			(at 0.9125 0)
+			(at 0.9125 0 180)
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
@@ -564,11 +546,11 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "2729a011-bb55-4883-bced-d8df5b4d59a3")
-		(at 165.23 100.72)
+		(at 143 87.75 -90)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C13"
-			(at 0 -1.68 0)
+			(at 0 -1.68 90)
 			(layer "F.SilkS")
 			(uuid "45d57c0a-b87c-4c0a-ae6a-a2630a6560df")
 			(effects
@@ -579,7 +561,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.68 0)
+			(at 0 1.68 90)
 			(layer "F.Fab")
 			(uuid "d3fdf77f-e3d3-4026-b3fe-724090145b54")
 			(effects
@@ -590,7 +572,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d77e8a9c-8362-4a06-8c83-36f952f63f23")
@@ -601,7 +583,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "73034e84-2262-4856-ae5d-279b13cba7a3")
@@ -612,7 +594,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "33209519-3772-45fe-9f30-70a358bee27d")
@@ -627,24 +609,8 @@
 		(path "/41ec014c-b958-478d-b063-60640d05d9a4")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.261252 -0.735)
-			(end 0.261252 -0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "2add62b5-8b06-46d4-b2e6-b03712a054f4")
-		)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -654,6 +620,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "1fabf3f7-dcf7-408b-840e-0888a8d935e0")
+		)
+		(fp_line
+			(start -0.261252 -0.735)
+			(end 0.261252 -0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2add62b5-8b06-46d4-b2e6-b03712a054f4")
 		)
 		(fp_rect
 			(start -1.7 -0.98)
@@ -678,7 +654,7 @@
 			(uuid "4c6e1e50-233f-462d-9ec1-17d8afd16b0a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "4f02fd56-1840-4a87-b433-43c102f985c1")
 			(effects
@@ -689,7 +665,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.95 0)
+			(at -0.95 0 270)
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -698,7 +674,7 @@
 			(uuid "d6ef5846-daf5-439d-af2e-b9502a86846b")
 		)
 		(pad "2" smd roundrect
-			(at 0.95 0)
+			(at 0.95 0 270)
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -785,15 +761,6 @@
 		(path "/76fffcfb-3d24-4172-8eb7-a259ace71b2d")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "6" "20" "2" "3" "15" "16" "17" "27" "28" "29" "30" "31" "32" "1"
-					"21" "19" "4" "5" "7" "8" "9" "10" "11" "12" "13" "14" "18" "22" "23"
-					"24" "25" "26"
-				)
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1447,13 +1414,13 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "2a6ee96c-11fc-416c-9f55-ff6d801e6352")
-		(at 153.4125 63.5 180)
+		(at 130.1625 66.25)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R11"
 			(at 0 -1.65 0)
 			(layer "F.SilkS")
-			(uuid "d4ef2634-e8d3-44b0-bae6-3e222a528a88")
+			(uuid "fc6cb3fd-847f-4c64-8bca-c5a7e9416428")
 			(effects
 				(font
 					(size 1 1)
@@ -1464,7 +1431,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
-			(uuid "3449c91c-2833-4ffa-bdcf-172ae8f64870")
+			(uuid "63262996-9391-4e8b-90f8-7a8ec2d2e7f8")
 			(effects
 				(font
 					(size 1 1)
@@ -1476,7 +1443,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "af1411c0-e69c-4998-a0a2-4e42b75cc44e")
+			(uuid "b5d32386-747b-4290-aa79-1e3da4e03b38")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1487,7 +1454,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b83c33d1-e0b0-455d-bc32-53115c7319f0")
+			(uuid "a3224eb4-7f64-48b0-a000-38004c6891b5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1510,24 +1477,8 @@
 		(path "/f2a203ae-e7f3-4802-8411-5fff8145438b")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.227064 0.735)
-			(end 0.227064 0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6a584c78-1cfc-4b6e-882c-cea5e966368f")
-		)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -1537,6 +1488,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "cd9363e9-0195-4bdd-98dc-da5e4b18c0b1")
+		)
+		(fp_line
+			(start -0.227064 0.735)
+			(end 0.227064 0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6a584c78-1cfc-4b6e-882c-cea5e966368f")
 		)
 		(fp_rect
 			(start -1.68 -0.95)
@@ -1572,7 +1533,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9125 0 180)
+			(at -0.9125 0)
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
@@ -1581,7 +1542,7 @@
 			(uuid "50c54211-e68b-4a31-98a8-57472f894303")
 		)
 		(pad "2" smd roundrect
-			(at 0.9125 0 180)
+			(at 0.9125 0)
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
@@ -1605,7 +1566,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "2f9e5a81-33ba-4fec-92ee-87945457af0b")
-		(at 150.58 109.5 -90)
+		(at 147 88 90)
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J4"
@@ -1620,7 +1581,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04"
-			(at -3.5 3.62 180)
+			(at -3.5 3.62 0)
 			(layer "F.Fab")
 			(uuid "732471cd-eee1-4f6e-9a77-ce29a984b158")
 			(effects
@@ -1668,53 +1629,17 @@
 		(path "/8b1880c4-75c5-4ccc-bce9-4a828c370898")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -1.38 9)
-			(end 1.38 9)
+			(start -1.38 -1.38)
+			(end 0 -1.38)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "aeec17d9-7fa9-4cb7-b398-e664e2c1f0fd")
-		)
-		(fp_line
-			(start -1.38 1.27)
-			(end -1.38 9)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b5e2da70-c591-4b6f-9fb3-b7f1d49d512f")
-		)
-		(fp_line
-			(start -1.38 1.27)
-			(end 1.38 1.27)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a8a0014a-60d9-45a2-bcf1-91eae6e187e5")
-		)
-		(fp_line
-			(start 1.38 1.27)
-			(end 1.38 9)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f427063f-cf88-431b-9240-b31f1424b69f")
+			(uuid "197932c4-9224-4d5a-9c1e-5579faf9ce11")
 		)
 		(fp_line
 			(start -1.38 0)
@@ -1727,14 +1652,44 @@
 			(uuid "5ecb395c-2790-44cc-855e-82eab88c85d3")
 		)
 		(fp_line
-			(start -1.38 -1.38)
-			(end 0 -1.38)
+			(start 1.38 1.27)
+			(end 1.38 9)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "197932c4-9224-4d5a-9c1e-5579faf9ce11")
+			(uuid "f427063f-cf88-431b-9240-b31f1424b69f")
+		)
+		(fp_line
+			(start -1.38 1.27)
+			(end 1.38 1.27)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a8a0014a-60d9-45a2-bcf1-91eae6e187e5")
+		)
+		(fp_line
+			(start -1.38 1.27)
+			(end -1.38 9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b5e2da70-c591-4b6f-9fb3-b7f1d49d512f")
+		)
+		(fp_line
+			(start -1.38 9)
+			(end 1.38 9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "aeec17d9-7fa9-4cb7-b398-e664e2c1f0fd")
 		)
 		(fp_rect
 			(start -1.77 -1.77)
@@ -1748,34 +1703,14 @@
 			(uuid "bd3ac56f-0d6b-4d7d-9fa7-dcf52c43a14a")
 		)
 		(fp_line
-			(start -1.27 8.89)
-			(end -1.27 -0.635)
+			(start 1.27 -1.27)
+			(end 1.27 8.89)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "4e0b1fca-02e7-4cc1-a049-0ed544582860")
-		)
-		(fp_line
-			(start 1.27 8.89)
-			(end -1.27 8.89)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "314f5941-b2a1-4ebc-a015-ef451508176d")
-		)
-		(fp_line
-			(start -1.27 -0.635)
-			(end -0.635 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "e01137e7-3f65-4885-bc35-145b69b36b13")
+			(uuid "5848fe94-95b5-44eb-8144-89d1bf379b87")
 		)
 		(fp_line
 			(start -0.635 -1.27)
@@ -1788,14 +1723,34 @@
 			(uuid "8699e47c-73f3-4641-843e-7740687891d8")
 		)
 		(fp_line
-			(start 1.27 -1.27)
-			(end 1.27 8.89)
+			(start -1.27 -0.635)
+			(end -0.635 -1.27)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "5848fe94-95b5-44eb-8144-89d1bf379b87")
+			(uuid "e01137e7-3f65-4885-bc35-145b69b36b13")
+		)
+		(fp_line
+			(start 1.27 8.89)
+			(end -1.27 8.89)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "314f5941-b2a1-4ebc-a015-ef451508176d")
+		)
+		(fp_line
+			(start -1.27 8.89)
+			(end -1.27 -0.635)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4e0b1fca-02e7-4cc1-a049-0ed544582860")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 3.81 0)
@@ -1809,7 +1764,7 @@
 			)
 		)
 		(pad "1" thru_hole rect
-			(at 0 0 270)
+			(at 0 0 90)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -1820,7 +1775,7 @@
 			(uuid "31ea03a0-38f3-4e6a-900f-7ab31b2ed27f")
 		)
 		(pad "2" thru_hole circle
-			(at 0 2.54 270)
+			(at 0 2.54 90)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -1831,7 +1786,7 @@
 			(uuid "a43ac670-8746-4fdb-a223-4707c9be122d")
 		)
 		(pad "3" thru_hole circle
-			(at 0 5.08 270)
+			(at 0 5.08 90)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -1842,7 +1797,7 @@
 			(uuid "c99bfe5e-355c-4aa4-a9e3-5ba4a0de2968")
 		)
 		(pad "4" thru_hole circle
-			(at 0 7.62 270)
+			(at 0 7.62 90)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -1931,12 +1886,6 @@
 		(path "/75d0332f-e6ed-4fe9-9495-388d574cd7ac")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2023,12 +1972,12 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "381bac76-4525-46ee-b850-80e66c1d5687")
-		(at 137.84 67 90)
-		(descr "Through hole straight pin header, 1x05, 2.54mm pitch, single row")
-		(tags "Through hole pin header THT 1x05 2.54mm single row")
+		(at 138.84 67 90)
+		(descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
+		(tags "Through hole pin header THT 1x06 2.54mm single row")
 		(property "Reference" "J1"
 			(at 0 -2.38 90)
 			(layer "F.SilkS")
@@ -2041,7 +1990,7 @@
 			)
 		)
 		(property "Value" "Conn_01x06"
-			(at 3.5 5.54 180)
+			(at 0 15.08 90)
 			(layer "F.Fab")
 			(uuid "737e6c47-6d01-406a-8a58-ffafbcacdd38")
 			(effects
@@ -2089,12 +2038,6 @@
 		(path "/71fb9d97-3140-4f8e-a6b7-e61db78565f0")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "5" "6")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2119,7 +2062,7 @@
 		)
 		(fp_line
 			(start 1.38 1.27)
-			(end 1.38 11.54)
+			(end 1.38 14.08)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2139,7 +2082,7 @@
 		)
 		(fp_line
 			(start -1.38 1.27)
-			(end -1.38 11.54)
+			(end -1.38 14.08)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2148,8 +2091,8 @@
 			(uuid "cd41e21f-45e8-4652-abda-5ca2ce7c460b")
 		)
 		(fp_line
-			(start -1.38 11.54)
-			(end 1.38 11.54)
+			(start -1.38 14.08)
+			(end 1.38 14.08)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2159,7 +2102,7 @@
 		)
 		(fp_rect
 			(start -1.77 -1.77)
-			(end 1.77 11.93)
+			(end 1.77 14.47)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -2170,7 +2113,7 @@
 		)
 		(fp_line
 			(start 1.27 -1.27)
-			(end 1.27 11.43)
+			(end 1.27 13.97)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -2199,8 +2142,8 @@
 			(uuid "3c893676-8a2e-42f8-bc30-477185736e7c")
 		)
 		(fp_line
-			(start 1.27 11.43)
-			(end -1.27 11.43)
+			(start 1.27 13.97)
+			(end -1.27 13.97)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -2209,7 +2152,7 @@
 			(uuid "bc6bdd6c-8abe-4c17-af42-728fbfc011b0")
 		)
 		(fp_line
-			(start -1.27 11.43)
+			(start -1.27 13.97)
 			(end -1.27 -0.635)
 			(stroke
 				(width 0.1)
@@ -2219,7 +2162,7 @@
 			(uuid "7ac47755-f58d-4868-9994-029a70a9230e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 5.08 0)
+			(at 0 6.35 180)
 			(layer "F.Fab")
 			(uuid "884e63dd-4939-471e-9756-ea61cdad7254")
 			(effects
@@ -2284,8 +2227,19 @@
 			(pintype "passive")
 			(uuid "c1bdf885-f92b-48f0-8e9a-7dc74a94c7db")
 		)
+		(pad "6" thru_hole circle
+			(at 0 12.7 90)
+			(size 1.7 1.7)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "GND")
+			(pinfunction "Pin_6_6")
+			(pintype "passive")
+			(uuid "cd14f59a-ebf0-4a2f-8707-cac059aab7d1")
+		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2363,12 +2317,6 @@
 		(path "/58bd2f2d-504a-49e8-a7e0-b8abfc878c3a")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2458,7 +2406,7 @@
 	(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm"
 		(layer "F.Cu")
 		(uuid "3efba731-28b5-4872-8afc-56a1bbdb4ede")
-		(at 169 98)
+		(at 157 76.25)
 		(descr "SMD rectangular pad as test Point, square 1.5mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP2"
@@ -2513,12 +2461,6 @@
 		(path "/7d6335d6-4351-4365-a703-fcf35cb15d03")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)
@@ -2625,7 +2567,7 @@
 	(footprint "Connector_USB:USB_Micro-B_Molex-105017-0001"
 		(layer "F.Cu")
 		(uuid "41e2e883-b785-4685-ab68-6e8ba24684a7")
-		(at 162.5 77.5 -90)
+		(at 162.5 75.25 -90)
 		(descr "http://www.molex.com/pdm_docs/sd/1050170001_sd.pdf")
 		(tags "Micro-USB SMD Typ-B")
 		(property "Reference" "J2"
@@ -2680,12 +2622,6 @@
 		(path "/c1499adc-d21e-4fa0-9149-62b870ad9901")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "SH" "5" "1" "3" "2" "4")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3082,7 +3018,7 @@
 	(footprint "Connector_RJ:RJ45_Hanrun_HR911105A_Horizontal"
 		(layer "F.Cu")
 		(uuid "4b2a7e84-8772-4ece-81c5-424a9dd479e3")
-		(at 123.11 72.92 -90)
+		(at 123.11 70.38 -90)
 		(descr "1 Port RJ45 8P8C receptacle, shielded, with magnetics, through hole, 2 LEDs, tab down, http://www.hanrun.com/public/upload/down/2020/09-11/cc11be56d66bb63d5f1eeb85492439c0.pdf")
 		(tags "RJ45 Magjack ethernet")
 		(property "Reference" "J3"
@@ -3137,12 +3073,6 @@
 		(path "/1492cd63-5693-49f8-9767-c258b738e3c9")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "4" "2" "3" "5" "6" "8" "SH" "7" "12" "11" "9" "10")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3584,13 +3514,13 @@
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "50e520b5-41bf-442b-aa7c-c26912fcbe5a")
-		(at 149 88 90)
+		(at 116.25 87.9375 90)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "LED")
 		(property "Reference" "D2"
 			(at 0 -1.65 90)
 			(layer "F.SilkS")
-			(uuid "8ea04c9f-5de1-4860-9b37-d8bf7a932549")
+			(uuid "837c1f21-0236-4775-916c-4b558d8ef986")
 			(effects
 				(font
 					(size 1 1)
@@ -3601,7 +3531,7 @@
 		(property "Value" "LED_GREEN"
 			(at -6.5 0 90)
 			(layer "F.Fab")
-			(uuid "952c6c19-f789-4a77-90ab-71b28d9c6fe1")
+			(uuid "2f06f665-eef0-4c5b-9345-e3a4d44318f0")
 			(effects
 				(font
 					(size 1 1)
@@ -3613,7 +3543,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "df19247c-15eb-48b6-b2c1-81aaabdda3fb")
+			(uuid "1718b4d9-77e9-4159-a953-51c86c0175a0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3624,7 +3554,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "627a7b27-37c8-41db-b0f7-6d391f8f7173")
+			(uuid "580a22b6-ddc4-4633-b434-a393d7b7fd76")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3660,12 +3590,6 @@
 		(path "/82e1ee6b-0378-45b7-95f3-962e2fefbb42")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3806,11 +3730,11 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "6fb07236-ff18-4ed3-baad-c7af5f823a05")
-		(at 165.23 97.71)
+		(at 140.5 87.55 90)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C12"
-			(at 0 -1.68 0)
+			(at 0 -1.68 90)
 			(layer "F.SilkS")
 			(uuid "805cd23a-da76-425b-89da-6dec5291736f")
 			(effects
@@ -3821,7 +3745,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.68 0)
+			(at 0 1.68 90)
 			(layer "F.Fab")
 			(uuid "31f1f057-0f90-4976-9078-72799bd95d0f")
 			(effects
@@ -3832,7 +3756,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "babe47ff-6b4f-41f6-ab52-fb5638f1fc88")
@@ -3843,7 +3767,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6937adef-7eaa-4845-8fc5-b7fdd8b4403f")
@@ -3854,7 +3778,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "8a71249a-aadc-4e2e-acaa-ebf9e698e947")
@@ -3869,12 +3793,6 @@
 		(path "/8fbcb191-af27-473c-be61-e821e717cd20")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3920,7 +3838,7 @@
 			(uuid "63143fde-3e22-4fed-9d12-fa6df3cfdc0c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "1f1ebe0d-fec1-4f83-9965-c3d9989f7bb9")
 			(effects
@@ -3931,7 +3849,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.95 0)
+			(at -0.95 0 90)
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -3940,7 +3858,7 @@
 			(uuid "0a7f2821-0892-406b-b2d4-d9a7b573cf86")
 		)
 		(pad "2" smd roundrect
-			(at 0.95 0)
+			(at 0.95 0 90)
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -3964,13 +3882,13 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "722a585a-2269-4eba-8683-0214dcad1353")
-		(at 143.0875 95)
+		(at 115.75 84.5)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R10"
 			(at 0 -1.65 0)
 			(layer "F.SilkS")
-			(uuid "484ee7b7-44fd-4d44-8cb8-0fff8cbb2549")
+			(uuid "fff66ed5-3ea0-47fb-a303-f3f8648be42c")
 			(effects
 				(font
 					(size 1 1)
@@ -3981,7 +3899,7 @@
 		(property "Value" "680"
 			(at 0 1.65 0)
 			(layer "F.Fab")
-			(uuid "e7f2fcd2-835c-406b-851f-1e9543c0d68b")
+			(uuid "4184184b-4b5e-43b0-9a49-cde06adc4c8b")
 			(effects
 				(font
 					(size 1 1)
@@ -3993,7 +3911,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9956bbbf-b8a7-4119-a75a-42117a5fa2db")
+			(uuid "ceb0ac18-c2ca-428a-ba6f-5018be84d486")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4004,7 +3922,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "77b949b2-ebb8-4291-a1a8-26e58a63b6f9")
+			(uuid "5ce8c6c9-7469-4774-a563-2c01fb2488f2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4027,12 +3945,6 @@
 		(path "/f8e731c0-01ef-46b2-b577-bc46e31efda5")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4184,12 +4096,6 @@
 		(path "/b5c71be2-55d1-4473-b19b-057f1fc7f957")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4359,12 +4265,6 @@
 		(path "/50b6d9dc-e129-4674-aa8e-4d9181990f8d")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4509,12 +4409,6 @@
 		(path "/2c2e4c54-ab28-4744-badf-2e865bba01e7")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)
@@ -4621,13 +4515,13 @@
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "9184397c-ecd8-4cd4-a098-afaa8bc11b03")
-		(at 143 88.0625 90)
+		(at 112.1875 84.5)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "LED")
 		(property "Reference" "D6"
-			(at 0 -1.65 90)
+			(at 0 -1.65 0)
 			(layer "F.SilkS")
-			(uuid "8a228be4-5ec8-46c7-86ea-ac3988855b70")
+			(uuid "a15b6c2c-14e4-4179-91e3-6b91882117d1")
 			(effects
 				(font
 					(size 1 1)
@@ -4636,9 +4530,9 @@
 			)
 		)
 		(property "Value" "LED_BLUE"
-			(at -6.4375 0 90)
+			(at -6.4375 0 0)
 			(layer "F.Fab")
-			(uuid "330926e5-557e-4738-b559-ab0f82ac3ce1")
+			(uuid "03a6ae99-817b-4bf3-aed3-d3df8d3e288f")
 			(effects
 				(font
 					(size 1 1)
@@ -4647,10 +4541,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ed2c7dc1-ffe9-431c-b552-99f5747daec1")
+			(uuid "32bc8b80-b8ab-46c2-aebc-85480d456cb8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4658,10 +4552,10 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c2397693-aff7-4b3a-b561-584a151f2be2")
+			(uuid "fc8900a0-5b91-48aa-b78a-351c131805b7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4669,7 +4563,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "046d68b8-fcda-443b-ae0c-84c45c61425d")
@@ -4681,7 +4575,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4697,24 +4591,8 @@
 		(path "/329a6e5f-6ad1-4eef-a994-b5678acfc9c8")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start 1 -0.96)
-			(end -1.685 -0.96)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "82bbaf08-9ba5-4eb5-9a99-3f2475bbca7e")
-		)
 		(fp_line
 			(start -1.685 -0.96)
 			(end -1.685 0.96)
@@ -4735,6 +4613,16 @@
 			(layer "F.SilkS")
 			(uuid "849be94a-46de-4123-8150-f0557bc9ada0")
 		)
+		(fp_line
+			(start 1 -0.96)
+			(end -1.685 -0.96)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "82bbaf08-9ba5-4eb5-9a99-3f2475bbca7e")
+		)
 		(fp_rect
 			(start -1.68 -0.95)
 			(end 1.68 0.95)
@@ -4747,14 +4635,24 @@
 			(uuid "c4fba14f-e944-45d9-a13c-58bb5e3ac8ef")
 		)
 		(fp_line
-			(start 1 -0.6)
-			(end -0.7 -0.6)
+			(start -1 -0.3)
+			(end -1 0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "08b8c354-2000-431a-b827-18f5d7d851e3")
+			(uuid "d3f8fba9-ae7e-4402-ab88-158637269698")
+		)
+		(fp_line
+			(start -1 0.6)
+			(end 1 0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "26bd5723-07eb-4bf1-89a4-17196bbfa9dd")
 		)
 		(fp_line
 			(start -0.7 -0.6)
@@ -4767,14 +4665,14 @@
 			(uuid "3ef54a4f-3f36-441b-a59b-693fa9668210")
 		)
 		(fp_line
-			(start -1 -0.3)
-			(end -1 0.6)
+			(start 1 -0.6)
+			(end -0.7 -0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "d3f8fba9-ae7e-4402-ab88-158637269698")
+			(uuid "08b8c354-2000-431a-b827-18f5d7d851e3")
 		)
 		(fp_line
 			(start 1 0.6)
@@ -4786,18 +4684,8 @@
 			(layer "F.Fab")
 			(uuid "f60ba378-e56c-45ba-9aaa-fd3ec0d09989")
 		)
-		(fp_line
-			(start -1 0.6)
-			(end 1 0.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "26bd5723-07eb-4bf1-89a4-17196bbfa9dd")
-		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "d8715ab3-e020-40d0-a9b5-c1722a8ddf5c")
 			(effects
@@ -4808,7 +4696,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9375 0 90)
+			(at -0.9375 0)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -4818,7 +4706,7 @@
 			(uuid "0f3a1954-12ff-40e0-b205-68c662311e28")
 		)
 		(pad "2" smd roundrect
-			(at 0.9375 0 90)
+			(at 0.9375 0)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -4843,7 +4731,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "9257e1f5-c070-4b0f-b7cd-120437420622")
-		(at 160.78 97.71)
+		(at 140.55 70.75 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C7"
@@ -4906,24 +4794,8 @@
 		(path "/6c680f1f-456f-4c05-9a98-b0c2c9fef533")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.261252 -0.735)
-			(end 0.261252 -0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "68fcdcb7-9768-42f7-9796-71f79d460dff")
-		)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -4933,6 +4805,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "5f784de8-47b6-4893-b519-30d2872a953c")
+		)
+		(fp_line
+			(start -0.261252 -0.735)
+			(end 0.261252 -0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "68fcdcb7-9768-42f7-9796-71f79d460dff")
 		)
 		(fp_rect
 			(start -1.7 -0.98)
@@ -4968,7 +4850,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.95 0)
+			(at -0.95 0 180)
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -4977,7 +4859,7 @@
 			(uuid "8d72e715-2725-4958-9d35-ca4273a5e077")
 		)
 		(pad "2" smd roundrect
-			(at 0.95 0)
+			(at 0.95 0 180)
 			(size 1 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -5064,12 +4946,6 @@
 		(path "/e17b8396-029e-42a4-80d4-073f8c213796")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "5" "2" "6" "4")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5418,12 +5294,6 @@
 		(path "/995b077b-5496-4e24-8a0c-7a58052e69a9")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)
@@ -5530,13 +5400,13 @@
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "a0287a47-5b4f-48ae-843a-1ece1ddd95cb")
-		(at 151.75 88.0625 90)
+		(at 120.75 87.9375 90)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "LED")
 		(property "Reference" "D3"
 			(at 0 -1.65 90)
 			(layer "F.SilkS")
-			(uuid "c2949fe8-6f1c-4de9-93bb-bfc60936c961")
+			(uuid "e0397bd1-8095-46da-bfd5-e913512635b4")
 			(effects
 				(font
 					(size 1 1)
@@ -5547,7 +5417,7 @@
 		(property "Value" "LED_YELLOW"
 			(at -7 0 90)
 			(layer "F.Fab")
-			(uuid "f2724a70-d488-4c8e-90e2-25e9d4d2ddd7")
+			(uuid "b089d732-9e90-47ef-a96b-f846974738ce")
 			(effects
 				(font
 					(size 1 1)
@@ -5559,7 +5429,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5ebdda63-4020-4adf-b86d-7630638884cb")
+			(uuid "6a7beb26-df1d-40f3-9377-10a55842dfc9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5570,7 +5440,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "87f18fdc-c89c-4d58-8564-ffef36673992")
+			(uuid "c8cc5881-6641-4bda-a028-8aa0bfed4346")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5606,12 +5476,6 @@
 		(path "/57ed712f-8330-440b-a6f4-13a50d26df77")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5752,7 +5616,7 @@
 	(footprint "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
 		(layer "F.Cu")
 		(uuid "a81adc8a-2b03-4648-81df-3df9ca0df4aa")
-		(at 169.5 92.5)
+		(at 156.75 72.25)
 		(descr "THT rectangular pad as test Point, square 2.0mm_Drill1.0mm  side length, hole diameter 1.0mm")
 		(tags "test point THT pad rectangle square")
 		(property "Reference" "TP7"
@@ -5807,12 +5671,6 @@
 		(path "/c38e96bf-84cd-49e5-b0aa-fd9ca61720a8")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.2 -1.2)
@@ -5976,12 +5834,6 @@
 		(path "/0752807c-66fd-4afc-a3cf-f4e90e782a9a")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)
@@ -6088,13 +5940,13 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "ae6c3d65-d421-41f8-b1ee-359f1e8cda86")
-		(at 148.0875 96.5)
+		(at 118.5 87.5875 -90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R6"
-			(at 0 -1.65 0)
+			(at 0 -1.65 90)
 			(layer "F.SilkS")
-			(uuid "862d69ac-2406-432e-87d4-e9c17c437a66")
+			(uuid "cee85aaf-2b39-41ec-8763-82319f693bb8")
 			(effects
 				(font
 					(size 1 1)
@@ -6103,9 +5955,9 @@
 			)
 		)
 		(property "Value" "330"
-			(at 0 1.65 0)
+			(at 0 1.65 90)
 			(layer "F.Fab")
-			(uuid "384dcd9c-a2f9-4ee4-971c-788b21a6f20c")
+			(uuid "7be06ba4-7861-418d-afb3-7537d56bbba6")
 			(effects
 				(font
 					(size 1 1)
@@ -6114,10 +5966,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0f8b2c71-ee88-4bbc-adac-e486a7c0d758")
+			(uuid "397270a1-c889-4cc3-91fc-0b9f544384d6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6125,10 +5977,10 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "61dda08d-6b74-405e-bee0-1d1451d7093a")
+			(uuid "5893bb3c-2962-4788-9535-f85e511b5e89")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6136,7 +5988,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "2c6a586a-8aa7-42fd-9e01-a4f8ed0f259e")
@@ -6151,24 +6003,8 @@
 		(path "/5817d19f-04f3-4e0b-9bea-f7e992b50606")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.227064 -0.735)
-			(end 0.227064 -0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "4c7a81e1-13bd-48b9-9b8e-af2674d1c963")
-		)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -6178,6 +6014,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "77714ab3-6f02-44bf-92c7-6a4c0b0040c5")
+		)
+		(fp_line
+			(start -0.227064 -0.735)
+			(end 0.227064 -0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4c7a81e1-13bd-48b9-9b8e-af2674d1c963")
 		)
 		(fp_rect
 			(start -1.68 -0.95)
@@ -6202,7 +6048,7 @@
 			(uuid "59c3dae4-2e3c-4d17-8617-35fbf20169c1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "2c61e4ed-17a5-4922-98e5-2c0a5090d234")
 			(effects
@@ -6213,7 +6059,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9125 0)
+			(at -0.9125 0 270)
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
@@ -6222,7 +6068,7 @@
 			(uuid "e7ca98e4-9b60-437e-81bc-92b7faf040a2")
 		)
 		(pad "2" smd roundrect
-			(at 0.9125 0)
+			(at 0.9125 0 270)
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
@@ -6309,12 +6155,6 @@
 		(path "/b2490303-2eb9-455c-b715-13bc63376fdf")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "5" "2" "6" "4")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6608,7 +6448,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "b2543868-f93b-4539-9419-ef904cf90511")
-		(at 130.55 93)
+		(at 152.55 84.75)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C1"
@@ -6671,12 +6511,6 @@
 		(path "/f65f57b8-9b2e-4344-ba88-179a1b7c6afe")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6766,7 +6600,7 @@
 	(footprint "Button_Switch_SMD:SW_SPST_B3U-1000P"
 		(layer "F.Cu")
 		(uuid "b6a102a6-0182-43fa-b893-f6a12a36b3a3")
-		(at 162.3 70.5)
+		(at 162.25 67)
 		(descr "Ultra-small-sized Tactile Switch with High Contact Reliability, Top-actuated Model, without Ground Terminal, without Boss")
 		(tags "Tactile Switch")
 		(property "Reference" "SW1"
@@ -6820,12 +6654,6 @@
 		(path "/7abd1947-8d6a-4a91-a577-ea0a62ebffdb")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7024,13 +6852,13 @@
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "b992a9ae-29a9-4ce4-9074-2604c1b145fd")
-		(at 155 88.1875 90)
+		(at 125.25 87.9375 90)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "LED")
 		(property "Reference" "D4"
 			(at 0 -1.65 90)
 			(layer "F.SilkS")
-			(uuid "defecb5c-8dbd-4594-8712-1d821777cfae")
+			(uuid "cd664a12-5f54-46dc-a75c-dbee1877270b")
 			(effects
 				(font
 					(size 1 1)
@@ -7041,7 +6869,7 @@
 		(property "Value" "LED_RED"
 			(at -5.4375 0 90)
 			(layer "F.Fab")
-			(uuid "22c913cb-5c0f-416a-b9ee-2b2c7a77044b")
+			(uuid "86b1aad0-507c-4d64-9fb5-6a131aff4cb8")
 			(effects
 				(font
 					(size 1 1)
@@ -7053,7 +6881,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "14e5cd56-4def-4508-85c5-7a7a98d7a6b8")
+			(uuid "0be49538-6527-4b66-af40-4e7674f4ff98")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7064,7 +6892,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c557000e-c5cd-4635-b9d3-862b28bfd4fc")
+			(uuid "ba11c794-18db-4416-a234-e3c564177945")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7100,12 +6928,6 @@
 		(path "/c24b0eb4-bacb-458e-bfbd-d30f1806196b")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7309,12 +7131,6 @@
 		(path "/68a5fbc9-c267-45d3-982a-38bd4e9b1aec")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7404,7 +7220,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "bfb25139-2b3c-4d47-8f25-5ff6ed4bc6b5")
-		(at 135.05 98.5)
+		(at 138.8 77)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C6"
@@ -7467,12 +7283,6 @@
 		(path "/3abd34a8-9fd2-4e9e-9bcf-cd4c0f2b0929")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7625,12 +7435,6 @@
 		(path "/97c085b9-9541-408d-9554-9bc9fc412775")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7720,13 +7524,13 @@
 	(footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm"
 		(layer "F.Cu")
 		(uuid "c3224817-7d6d-449a-8685-0a1f3c923f48")
-		(at 133.25 74.1625)
+		(at 133.25 72.6625)
 		(descr "LQFP, 48 Pin (JEDEC MS-026 variation BBC, 1.40mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-lqfp/05081760_a_lx48.pdf)")
 		(tags "LQFP QFP CASE-932AA CASE-932-03 C48-1 C48-2 C48-3 C48-5 C48-6 C48-6C PT0048A")
 		(property "Reference" "U1"
 			(at 0 -5.85 0)
 			(layer "F.SilkS")
-			(uuid "339ad13d-1a73-4c53-8503-e5efab53d66c")
+			(uuid "2b9e1edc-dcff-4151-b2cc-6b8ecea2b05e")
 			(effects
 				(font
 					(size 1 1)
@@ -7737,7 +7541,7 @@
 		(property "Value" "W5500"
 			(at 0 2 0)
 			(layer "F.Fab")
-			(uuid "2362951d-2b92-49d0-b731-e89cc2e6e08f")
+			(uuid "98569913-2a08-49ae-86d1-062d82c03a98")
 			(effects
 				(font
 					(size 1 1)
@@ -7749,7 +7553,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "66f70296-8e5a-460f-8c4d-829807222f17")
+			(uuid "d90501e2-491e-4a05-b811-dedd84ef0f91")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7760,7 +7564,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "aae73472-b173-49e9-9502-0b4feb73ae88")
+			(uuid "6b2f8080-b8f3-48af-b332-bfe051db5848")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7783,16 +7587,6 @@
 		(path "/30d33bff-8c38-48b5-aa1a-4131132df2f5")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "32" "33" "34" "35" "36" "37" "45" "44" "43" "30" "31" "38" "39"
-					"40" "41" "42" "23" "28" "29" "21" "11" "8" "17" "4" "15" "14" "9" "48"
-					"3" "19" "16" "7" "12" "13" "46" "47" "1" "2" "5" "6" "24" "25" "26"
-					"27" "10" "18" "20" "22"
-				)
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8606,13 +8400,13 @@
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "c37322d1-bd00-4a2d-b699-3512cd6e0aac")
-		(at 146 88 90)
+		(at 112.0625 88.75)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "LED")
 		(property "Reference" "D1"
-			(at 0 -1.65 90)
+			(at 0 -1.65 0)
 			(layer "F.SilkS")
-			(uuid "f1584c33-79c6-4e10-97af-a7c61b73580c")
+			(uuid "219ea060-73bd-404e-a294-3efd02a5c87b")
 			(effects
 				(font
 					(size 1 1)
@@ -8621,9 +8415,9 @@
 			)
 		)
 		(property "Value" "LED_BLUE"
-			(at -6 0 90)
+			(at -6 0 0)
 			(layer "F.Fab")
-			(uuid "3bf3a94f-403a-41af-9c2c-af34fc1f4860")
+			(uuid "c2e02937-4b03-4326-866c-46842e252571")
 			(effects
 				(font
 					(size 1 1)
@@ -8632,10 +8426,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ecf5a369-4cd2-4449-92c1-5e481b949272")
+			(uuid "dd7d31b8-4c89-4f76-b5bf-b858dd2698e8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8643,10 +8437,10 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "89e395ee-0d7a-4184-a0d6-57baa99ad203")
+			(uuid "3bff6dea-a437-441d-a563-6017e50b015d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8654,7 +8448,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "bac3ac28-f160-4d17-a71a-fb734b68219c")
@@ -8666,7 +8460,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8682,24 +8476,8 @@
 		(path "/b408f45b-be15-4cd9-a855-cb6ebbd01cf4")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start 1 -0.96)
-			(end -1.685 -0.96)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "32c70546-4a86-4b1a-998c-ae425fd6a82e")
-		)
 		(fp_line
 			(start -1.685 -0.96)
 			(end -1.685 0.96)
@@ -8720,6 +8498,16 @@
 			(layer "F.SilkS")
 			(uuid "6b7fe424-9b50-4d62-94d2-9164cbc48788")
 		)
+		(fp_line
+			(start 1 -0.96)
+			(end -1.685 -0.96)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "32c70546-4a86-4b1a-998c-ae425fd6a82e")
+		)
 		(fp_rect
 			(start -1.68 -0.95)
 			(end 1.68 0.95)
@@ -8732,14 +8520,24 @@
 			(uuid "a977b08d-399d-4687-9b79-f588ef64634c")
 		)
 		(fp_line
-			(start 1 -0.6)
-			(end -0.7 -0.6)
+			(start -1 -0.3)
+			(end -1 0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "15337d1d-853d-4332-b4cf-e6f59f33e58b")
+			(uuid "4f9e63bc-f278-42b4-be10-27b858934f57")
+		)
+		(fp_line
+			(start -1 0.6)
+			(end 1 0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "294cc08c-d839-406a-92d0-8d6e9d181c84")
 		)
 		(fp_line
 			(start -0.7 -0.6)
@@ -8752,14 +8550,14 @@
 			(uuid "226fbbba-e11a-49cf-8ba2-17c122e14570")
 		)
 		(fp_line
-			(start -1 -0.3)
-			(end -1 0.6)
+			(start 1 -0.6)
+			(end -0.7 -0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "4f9e63bc-f278-42b4-be10-27b858934f57")
+			(uuid "15337d1d-853d-4332-b4cf-e6f59f33e58b")
 		)
 		(fp_line
 			(start 1 0.6)
@@ -8771,18 +8569,8 @@
 			(layer "F.Fab")
 			(uuid "8badd891-b060-4443-8ec3-3904fe1ae665")
 		)
-		(fp_line
-			(start -1 0.6)
-			(end 1 0.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "294cc08c-d839-406a-92d0-8d6e9d181c84")
-		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "5671186a-9291-4b10-a30d-7d22c626a547")
 			(effects
@@ -8793,7 +8581,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9375 0 90)
+			(at -0.9375 0)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8803,7 +8591,7 @@
 			(uuid "634ca5ce-d026-4ed1-8459-924e70e44f22")
 		)
 		(pad "2" smd roundrect
-			(at 0.9375 0 90)
+			(at 0.9375 0)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8828,7 +8616,7 @@
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "c449532a-a7c2-411b-83c7-1cb4b74f834f")
-		(at 157.0625 63.5 180)
+		(at 134.0625 66 180)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "LED")
 		(property "Reference" "D7"
@@ -8904,12 +8692,6 @@
 		(path "/53bef2d7-e208-4bc4-935c-f5c6b0b1694a")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9113,12 +8895,6 @@
 		(path "/8dac14b5-5791-4c41-8030-4ef52b9627ba")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9208,13 +8984,13 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "d65081c1-a74f-4f81-b14a-e02d73159f44")
-		(at 160.78 103.73)
+		(at 160.45 81.5)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C9"
 			(at 0 -1.68 0)
 			(layer "F.SilkS")
-			(uuid "622cad16-21c0-4b01-a190-e61be543b3dd")
+			(uuid "614fcc70-a19c-4d0d-b22b-85239635cc35")
 			(effects
 				(font
 					(size 1 1)
@@ -9225,7 +9001,7 @@
 		(property "Value" "1u"
 			(at 0 1.68 0)
 			(layer "F.Fab")
-			(uuid "02b32363-af12-4608-9394-0dceca63a0d5")
+			(uuid "ceaa3781-c1e6-42a4-a0ab-4abf6a922dba")
 			(effects
 				(font
 					(size 1 1)
@@ -9237,7 +9013,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "65f1d362-16c0-4c53-9a48-83939b647597")
+			(uuid "f1e4ed57-ed3b-41bb-9ebb-40a56325b588")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9248,7 +9024,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "11dbc0d1-dbb3-4075-ba32-a9a0317966ea")
+			(uuid "5e661e6e-8c08-46fd-afa5-18a7c31b930d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9271,12 +9047,6 @@
 		(path "/606d9976-0ba7-4c90-848f-66d14b9f2c65")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9366,7 +9136,7 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "def23d03-3353-4ba0-847f-eddfff183241")
-		(at 158 71)
+		(at 157.9125 67 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R1"
@@ -9429,24 +9199,8 @@
 		(path "/f153dcc9-a4cd-48e2-9375-f44dea7645cd")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.227064 -0.735)
-			(end 0.227064 -0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "fac8c0aa-982d-48ba-91fb-abd028113b0b")
-		)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -9456,6 +9210,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "cc2bc517-3eff-4e2d-bb98-35c8f614b80b")
+		)
+		(fp_line
+			(start -0.227064 -0.735)
+			(end 0.227064 -0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fac8c0aa-982d-48ba-91fb-abd028113b0b")
 		)
 		(fp_rect
 			(start -1.68 -0.95)
@@ -9491,7 +9255,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9125 0)
+			(at -0.9125 0 180)
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
@@ -9500,7 +9264,7 @@
 			(uuid "1769284d-1665-4ea1-8e07-a2f66ed4ebd0")
 		)
 		(pad "2" smd roundrect
-			(at 0.9125 0)
+			(at 0.9125 0 180)
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
@@ -9524,7 +9288,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "e2519d57-d3a6-433f-8720-9fcb87705889")
-		(at 125.55 98.5)
+		(at 147.8 85)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C2"
@@ -9587,12 +9351,6 @@
 		(path "/77e6ca70-3606-452c-8f45-c920b1b3df9c")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9682,7 +9440,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "ed420ad0-6270-45a8-af22-1fdeea2b4422")
-		(at 165.23 94.7)
+		(at 135.7 79)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C11"
@@ -9745,12 +9503,6 @@
 		(path "/3aaaeae5-9c50-43b2-9f13-c31438961ae2")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9903,12 +9655,6 @@
 		(path "/f008e8e5-ce3a-4931-9a1e-c144113d9793")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "2" "4" "5")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10242,7 +9988,7 @@
 	(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm"
 		(layer "F.Cu")
 		(uuid "f1882296-3a3b-4f2b-bfe8-b2349ad41bc1")
-		(at 172.5 80.5)
+		(at 163.5 81)
 		(descr "SMD rectangular pad as test Point, square 1.5mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP1"
@@ -10297,12 +10043,6 @@
 		(path "/803ad87b-1c60-41fe-855e-6b76cd8d0f00")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)
@@ -10409,7 +10149,7 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "f1f461b3-61fa-411a-9f5b-1260e6566f63")
-		(at 158.0875 83)
+		(at 156.75 82.75)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R9"
@@ -10472,12 +10212,6 @@
 		(path "/c8289a01-b30b-40c4-99e9-42d2d869207f")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10643,12 +10377,6 @@
 		(path "/82570db7-755f-4515-b3b5-76c8f884ef4a")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10852,12 +10580,6 @@
 		(path "/7567aa8d-398f-4f2c-8ae8-722c33609bdd")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10947,7 +10669,7 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "f97eea91-8c25-475e-a735-7cbd06a41914")
-		(at 160.78 106.74)
+		(at 160.3 84.5)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
 		(tags "capacitor")
 		(property "Reference" "C10"
@@ -10962,7 +10684,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 9.03 -29.49 270)
+			(at -2.3 0.25 270)
 			(layer "F.Fab")
 			(uuid "4a8413c9-8bd9-461d-867e-39bf6f0c0a3b")
 			(effects
@@ -11010,12 +10732,6 @@
 		(path "/d5998ac5-c39d-4b60-bcee-8092a63a1ca6")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11160,12 +10876,6 @@
 		(path "/55cf391a-eb6b-489a-acda-653b1ef35bf0")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)
@@ -11272,13 +10982,13 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "fe3697e1-189e-4f95-be20-655a46b6c0d2")
-		(at 155 84.5875 -90)
+		(at 127.5 87.5875 -90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R8"
 			(at 0 -1.65 90)
 			(layer "F.SilkS")
-			(uuid "4f351b87-67f7-4566-b8ae-7c84f847a4cd")
+			(uuid "dc27f597-0a88-4eec-984a-563e9e6508ca")
 			(effects
 				(font
 					(size 1 1)
@@ -11289,7 +10999,7 @@
 		(property "Value" "330"
 			(at 0 1.65 90)
 			(layer "F.Fab")
-			(uuid "6e8e4e86-113d-4b54-b5f4-c1b110c0e567")
+			(uuid "fc6a1107-6bd8-465a-b3e1-6cb868e0d23b")
 			(effects
 				(font
 					(size 1 1)
@@ -11301,7 +11011,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7b4ede33-d17a-43ad-ba6b-c4197348cda8")
+			(uuid "6e4e20e3-4a7b-45ac-9f48-4412a2cc70f5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11312,7 +11022,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "151b5db1-c478-4c2b-b372-c984cde2d15c")
+			(uuid "bb0d5132-c634-4301-aed5-dd5501613b15")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11335,12 +11045,6 @@
 		(path "/6a4cbd76-adac-4daa-a3a8-edaa5e11367d")
 		(sheetname "/")
 		(sheetfile "NetworkNotifier.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
